@@ -1,0 +1,22 @@
+
+
+* Solution
+	In soluton.h
+
+
+* How to use 
+
+	Solution<T> sol;
+	sol.initialize(data_array, data_size);
+	sol.query(min, max); // num of objs in [min, max] (min < max)
+	sol.query(val, val); // num of objs equals val
+	sol.query(val);      // num of objs greater than val 
+
+	See test_case1 and test_case2 for how to use it with c++ internal types
+	See test_case3 for how to use it with user defined class
+		user defined class must implement "operator <" and "operator =="
+
+
+* Run the program
+$ make
+$ ./solution

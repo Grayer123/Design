@@ -43,7 +43,7 @@ void test_case1()
         int num = sol.query(min_val, max_val);
         printf("\t%d,\n", num);
 		    gettimeofday(&after, NULL);
-		    printf("\ttotal time elapsed : %.0lf ms;\n", time_diff(before, after));
+		    printf("\ttotal time elapsed : %.0lf us;\n", time_diff(before, after));
         delete []array;
     }
     {
@@ -91,7 +91,7 @@ void test_case2()
         int num = sol.query(min_val, max_val);
         printf("\t%d,\n", num);
         gettimeofday(&after, NULL);
-        printf("\ttotal time elapsed : %.0lf ms;\n", time_diff(before, after));
+        printf("\ttotal time elapsed : %.0lf us;\n", time_diff(before, after));
         delete []array;
     }
     {
@@ -155,7 +155,7 @@ void test_case3()
         int num = sol.query(min_val, max_val);
         printf("\t%d,\n", num);
         gettimeofday(&after, NULL);
-        printf("\ttotal time elapsed : %.0lf ms;\n", time_diff(before, after));
+        printf("\ttotal time elapsed : %.0lf us;\n", time_diff(before, after));
         delete []array;
     }
 }
